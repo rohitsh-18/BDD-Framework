@@ -1,0 +1,8 @@
+stepdefinations\MyStepdefs.class
+pageobject\GlobalProperties.class
+pageobject\Mobile.class
+stepdefinations\Mobile_app.class
+stepdefinations\TestRunner.class
+pageobject\LoginPage.class
+pageobject\AndroidTest.class
+pageobject\BasePage.class
