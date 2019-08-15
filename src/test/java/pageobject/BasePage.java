@@ -23,7 +23,8 @@ public class BasePage {
     public static AppiumDriver driver1;
 
     public static void setWebdriver() throws Exception {
-//        GlobalProperties properties = new GlobalProperties();
+        System.out.println("in driver launch");
+        GlobalProperties properties = new GlobalProperties();
         BasePage.loadPropertiesObjectInHashMap(BasePage.readProperitesFile(), GlobalProperties.propMap);
 
         if (GlobalProperties.propMap.get("browserName").equalsIgnoreCase("chrome")) {
@@ -36,7 +37,7 @@ public class BasePage {
     }
 
     public static Properties readProperitesFile() throws Exception {
-        FileInputStream file = new FileInputStream("./config.properties");
+        FileInputStream file = new FileInputStream("src/test/resources/Data/config.properties");
         Properties property = new Properties();
         property.load(file);
         return property;
